@@ -1,5 +1,6 @@
 package com.example.clarmour.twoactivites;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,5 +20,8 @@ public class MainActivity extends AppCompatActivity
     public void launchSecondActivity(View view)
     {
         Log.d(LOG_TAG, "Button clicked!");
+        Intent intent = new Intent(this, activity_second.class);
+        startActivity(intent);
+
     }
 }
